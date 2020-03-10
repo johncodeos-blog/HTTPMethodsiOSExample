@@ -1,3 +1,4 @@
+![logo](https://i.imgur.com/Dv73hCk.png)
 # HTTPMethodsiOSExample
 Make POST, GET, PUT and DELETE requests with URLSession using Swift
 
