@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 //            print("Error: cannot create URL")
 //            return
 //        }
-        guard let url = URL(string: "https://dummy.restapiexample.com/api/v1/create") else {
+        guard let url = URL(string: "http://dummy.restapiexample.com/api/v1/create") else {
             print("Error: cannot create URL")
             return
         }
@@ -84,7 +84,7 @@ class ViewController: UIViewController {
                 print("Error: Did not receive data")
                 return
             }
-            guard let response = response as? HTTPURLResponse, (200 ..< 300) ~= response.statusCode else {
+            guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
                 print("Error: HTTP request failed")
                 return
             }
@@ -146,7 +146,7 @@ class ViewController: UIViewController {
                 print("Error: Did not receive data")
                 return
             }
-            guard let response = response as? HTTPURLResponse, (200 ..< 300) ~= response.statusCode else {
+            guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
                 print("Error: HTTP request failed")
                 return
             }
@@ -226,7 +226,7 @@ class ViewController: UIViewController {
                 print("Error: Did not receive data")
                 return
             }
-            guard let response = response as? HTTPURLResponse, (200 ..< 300) ~= response.statusCode else {
+            guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
                 print("Error: HTTP request failed")
                 return
             }
@@ -288,7 +288,7 @@ class ViewController: UIViewController {
                 print("Error: Did not receive data")
                 return
             }
-            guard let response = response as? HTTPURLResponse, (200 ..< 300) ~= response.statusCode else {
+            guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
                 print("Error: HTTP request failed")
                 return
             }
